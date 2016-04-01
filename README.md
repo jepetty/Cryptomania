@@ -1,2 +1,6 @@
 # Cryptomania
-cryptographic key creation using chaotic data sets
+- Creates a cryptographic key using a chaotic data set
+- SWAGGY AF
+
+##To do:
+- [ ] Make cryptographic key
