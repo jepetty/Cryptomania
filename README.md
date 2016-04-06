@@ -2,6 +2,9 @@
 - Creates a cryptographic key using a chaotic data set
 - SWAGGY AF
 
+##Files
+- ```lorenz.txt```: text file containing 500,000 data entries for the Lorenz data set
+
 ##To do:
 - [ ] Make cryptographic key
 
