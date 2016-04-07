@@ -13,17 +13,18 @@ s = sys.argv[1]
 
 # ascii value of the input string
 val = ''.join(str(ord(c)) for c in s)
-# mod by length of document to avoid going out of bounds
-val = int(val) % 499999
 
+iterations = 0
+while iterations < 10:
+    i = 0
+    # mod by length of document to avoid going out of bounds
+    val = int(val) % 499999
+    with open('lorenz.txt') as f:
+        for line in f:
+            # print the result at the proper index
+            if (i == val):
+                val = line[:-5].replace('.', '')
+            i += 1
+    iterations += 1
 
-i = 0
-with open('lorenz.txt') as f:
-    for line in f:
-        # print the result at the proper index
-        if (i == val):
-            print(line[:-5].replace('.', ''))
-            sys.exit(0)
-        i += 1
-
-print('Error')
+print(val)
