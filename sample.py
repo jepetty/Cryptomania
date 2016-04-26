@@ -3,7 +3,7 @@
 import random
 import string
 
-n = 100
+n = 10000
 values = []
 collisions = []
 avg = 0
